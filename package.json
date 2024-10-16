@@ -21,6 +21,7 @@
     "react-simple-toasts": "^6.0.0",
     "recoil": "^0.7.7",
     "redux": "^5.0.1",
+    "sass": "^1.79.5",
     "scss": "^0.2.4",
     "sort-by": "^1.2.0",
     "styled-component": "^2.8.0"
