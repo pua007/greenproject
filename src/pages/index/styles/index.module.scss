@@ -1,6 +1,15 @@
-$HEADER-HEIGHT: 50px;
+$HEADER-HEIGHT: 70px;
 $FOOTER-HEIGHT: 50px;
 $NAVIGATION-HEIGHT: 50px;
+
+@keyframes colorFade {
+    from {
+        filter: grayscale(100%);
+    }
+    to {
+        filter: grayscale(0%);
+    }
+}
 
 .page {
     display: flex;
@@ -18,7 +27,9 @@ $NAVIGATION-HEIGHT: 50px;
         justify-content: flex-start;
 
         width: 100%;
-        height: calc(100% - $HEADER-HEIGHT - $FOOTER-HEIGHT - $NAVIGATION-HEIGHT);
+        height: calc(
+            100% - $HEADER-HEIGHT - $FOOTER-HEIGHT - $NAVIGATION-HEIGHT
+        );
 
         &__introBox {
             display: flex;
@@ -28,9 +39,15 @@ $NAVIGATION-HEIGHT: 50px;
             width: 100%;
             height: 40%;
 
-            background-image: url('src/assets/images/image-intro.jpg');
+            filter: grayscale(100%);
+            background-image: url("src/assets/images/main.png");
             background-size: cover;
             background-position: 100% 50%;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-name: colorFade;
+            animation-fill-mode: forwards;
+            //animation: colorFade 3s ease 1s none normal forwards;
 
             .wrapper {
                 display: flex;
