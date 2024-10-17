@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./CommonNavigation.module.scss";
+import React, { useState } from 'react';
+import styles from './CommonNavigation.module.scss';
 
 interface Navigation {
     index: number;
@@ -14,68 +14,76 @@ function CommonNavigation() {
     const [navigation, setNavigation] = useState<Navigation[]>([
         {
             index: 0,
-            path: "/edit",
-            label: "drink",
-            searchValue: "edit",
-            image: "src/assets/images/drink.png",
+            path: '/coffee',
+            label: 'coffee',
+            searchValue: 'coffee',
+            image: 'src/assets/images/drink.png',
             isActive: false,
         },
         {
             index: 1,
-            path: "/following",
-            label: "dessert",
-            searchValue: "following",
-            image: "src/assets/images/drink.png",
+            path: '/noncoffee',
+            label: 'noncoffee',
+            searchValue: '3d rendering',
+            image: 'src/assets/images/tea.png',
             isActive: false,
         },
         {
             index: 2,
-            path: "/photoPlus",
-            label: "cake",
-            searchValue: "photo",
-            image: "src/assets/images/drink.png",
+            path: '/dessert',
+            label: 'dessert',
+            searchValue: 'following',
+            image: 'src/assets/images/eggtart.png',
             isActive: false,
         },
         {
             index: 3,
-            path: "/oneColor",
-            label: "단색",
-            searchValue: "one color",
-            image: "src/assets/images/drink.png",
+            path: '/cake',
+            label: 'cake',
+            searchValue: 'photo',
+            image: 'src/assets/images/cake.png',
             isActive: false,
         },
         {
             index: 4,
-            path: "/3dRender",
-            label: "3d 랜더링",
-            searchValue: "3d rendering",
-            image: "src/assets/images/drink.png",
+            path: '/coffebean',
+            label: 'coffebean',
+            searchValue: 'one color',
+            image: 'src/assets/images/coffebean.png',
             isActive: false,
         },
-        {
-            index: 5,
-            path: "/nature",
-            label: "자연",
-            searchValue: "nature",
-            image: "src/assets/images/drink.png",
-            isActive: false,
-        },
-        {
-            index: 6,
-            path: "/texture",
-            label: "drink",
-            searchValue: "texture",
-            image: "src/assets/images/drink.png",
-            isActive: false,
-        },
-        {
-            index: 7,
-            path: "/interior",
-            label: "인테리어",
-            searchValue: "interior",
-            image: "src/assets/images/drink.png",
-            isActive: false,
-        },
+        // {
+        //     index: 4,
+        //     path: '/3dRender',
+        //     label: '3d 랜더링',
+        //     searchValue: '3d rendering',
+        //     image: 'src/assets/images/drink.png',
+        //     isActive: false,
+        // },
+        // {
+        //     index: 5,
+        //     path: '/nature',
+        //     label: '자연',
+        //     searchValue: 'nature',
+        //     image: 'src/assets/images/drink.png',
+        //     isActive: false,
+        // },
+        // {
+        //     index: 6,
+        //     path: '/texture',
+        //     label: 'drink',
+        //     searchValue: 'texture',
+        //     image: 'src/assets/images/drink.png',
+        //     isActive: false,
+        // },
+        // {
+        //     index: 7,
+        //     path: '/interior',
+        //     label: '인테리어',
+        //     searchValue: 'interior',
+        //     image: 'src/assets/images/drink.png',
+        //     isActive: false,
+        // },
         // {
         //     index: 8,
         //     path: "/film",
@@ -124,9 +132,7 @@ function CommonNavigation() {
             <div className={styles.navigation__menu} key={item.path}>
                 <div className={styles.navigation__menu__box}>
                     <img src={item.image} alt="" />
-                    <span className={styles.navigation__menu__label}>
-                        {item.label}
-                    </span>
+                    <span className={styles.navigation__menu__label}>{item.label}</span>
                 </div>
             </div>
         );
