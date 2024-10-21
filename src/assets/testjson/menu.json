@@ -1,0 +1,32 @@
+[
+	{
+		"title": "menu1",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	},
+	{
+		"title": "menu2",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	},
+	{
+		"title": "menu3",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	},
+	{
+		"title": "menu4",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	},
+	{
+		"title": "menu5",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	},
+	{
+		"title": "menu6",
+		"price": "2000",
+		"img": "src/assets/images/eggtart.png"
+	}
+]

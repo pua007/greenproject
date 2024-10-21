@@ -1,0 +1,49 @@
+.container {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 10px 50px 10px;
+
+		border: 1px solid black;
+		border-radius: 10px;
+
+		width: calc(100% / 5 - 120px / 5);
+
+		&__image {
+			width: 100%;
+			height: 50%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 25%;
+
+			margin: 10px 0px;
+		}
+
+		&__price {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 25%;
+
+			margin: 10px 0px;
+
+			&::after {
+				content: '원';
+			}
+		}
+	}
+}
